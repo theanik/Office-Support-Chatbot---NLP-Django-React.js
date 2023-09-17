@@ -1,0 +1,97 @@
+version: "3.9"
+services:
+    nginx:
+        image: nginx:1.22.1
+        container_name: CHATBOT_NGINX
+        env_file:
+            - ./.env
+        ports:
+            - ${WEB_EXPOSE_PORT}:80
+        volumes:
+            - ./.docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+            - ./.docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+            - ./:/app
+        networks:
+            - chatbot_app
+        depends_on:
+            - web
+    web:
+        container_name: CHATBOT_WEB
+        build:
+            context: ./chat-ui
+            dockerfile: Dockerfile
+        volumes:
+            - ./chat-ui:/app
+            - /app/node_modules
+        env_file:
+            - ./.env
+        working_dir: /app
+        environment:
+            - NODE_ENV=development
+        networks:
+            - chatbot_app
+    app:
+        container_name: CHATBOT_APP
+        build:
+            context: ./.docker/server
+        ports:
+            - ${APP_EXPOSE_PORT}:${APP_PORT}
+        depends_on:
+            - database
+            - redis
+        links:
+            - database:database
+        networks:
+            - chatbot_app
+        env_file:
+            - ./.env
+        command: python manage.py runserver 0.0.0.0:8888
+        volumes:
+            - ./server/:/app
+        working_dir: /app
+
+    database:
+        container_name: CHATBOT_APP_DB
+        image: postgres:13-alpine
+        restart: unless-stopped
+        environment:
+            POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+            POSTGRES_USER: ${DATABASE_USER}
+            POSTGRES_DB: ${DATABASE_NAME}
+            POSTGRES_PORT: ${DATABASE_PORT}
+            POSTGRES_HOST_AUTH_METHOD: trust
+        ports:
+            - ${DATABASE_EXPOSE_PORT:-54311}:${DATABASE_PORT:-5432}
+        volumes:
+            - ./.docker/postgres_data:/var/lib/postgresql/data
+        networks:
+            - chatbot_app
+    redis:
+        image: "redis:latest"
+        container_name: CHATBOT_APP_REDIS
+        command: redis-server --requirepass ${REDIS_PASSWORD}
+        volumes:
+            - ./.docker/redis:/data
+        ports:
+            - ${REDIS_EXPOSE_PORT}:${REDIS_PORT}
+        networks:
+            - chatbot_app
+
+    pgadmin:
+        container_name: CHATBOT_APP_PGADMIN
+        image: dpage/pgadmin4:5.5
+        restart: always
+        environment:
+            PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+            PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+            PGADMIN_LISTEN_PORT: ${PGADMIN_LISTEN_PORT}
+        ports:
+            - ${PGADMIN_EXPOSE_PORT}:${PGADMIN_LISTEN_PORT}
+        volumes:
+            - ./.docker/pgadmin:/var/lib/pgadmin
+        networks:
+            - chatbot_app
+
+networks:
+    chatbot_app:
+        driver: bridge

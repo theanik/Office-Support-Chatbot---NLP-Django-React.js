@@ -1,0 +1,39 @@
+"question","label"
+
+"Hello!","say_hi"
+"Hello","say_hi"
+"Hello there!","say_hi"
+
+"Hi!","say_hello"
+"Hi there!","say_hello"
+"Greetings!","say_hello"
+"Hi, nice to meet you","say_hello"
+
+"Good morning!","good_morning"
+"Good afternoon!","good_afternoon"
+"Good evening!","good_evening"
+
+"Hey, how's it going?","informal_greetings_say_whatsgoing"
+"Hello, How it's going?","informal_greetings_say_whatsgoing"
+
+"Thank you!","say_thankyou"
+"Thanks!","say_thankyou"
+"Thanks for your help","say_thankyou"
+"Thank you for your help","say_thankyou"
+"Thanks for your support","say_thankyou"
+"Thank you for your support","say_thankyou"
+"Nice to meet you","say_thankyou"
+"Enjoyed talked with you","say_thankyou"
+
+"Bye!","say_bye"
+"Byeee","say_bye"
+"Goodbye","say_bye"
+"Good bye","say_bye"
+
+I am fine,happy_to_hear
+I am good,happy_to_hear
+I am well,happy_to_hear
+I am doing well,happy_to_hear
+Fine,happy_to_hear
+Good,happy_to_hear
+

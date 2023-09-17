@@ -1,0 +1,182 @@
+[
+    {
+        "label": "say_hi",
+        "answer" : [
+            "Hi!",
+            "Hi there!",
+            "Hey there!",
+            "Hi! What's on your mind?",
+            "Hey! Is there something you'd like to chat about?",
+            "Hey! I'm here if you want to chat about anything."
+        ]
+    },
+    {
+        "label": "say_hello",
+        "answer" : [
+            "Hello!",
+            "Hello there!",
+            "Hey there!",
+            "Hello! What's on your mind?",
+            "Hey! Is there something you'd like to chat about?",
+            "Hey! I'm here if you want to chat about anything."
+        ]
+    },
+    {
+        "label": "informal_greetings_say_whatsupp",
+        "answer" : [
+            "Not much, just chilling.",
+            "Hey! Just working away.",
+            "Oh, you know, the usual.",
+            "Just catching up on things.",
+            "Hey there! Just getting things done.",
+            "Hey! Just enjoying some downtime.",
+            "Not a whole lot, just relaxing.",
+            "Nothing too exciting.",
+            "Same old, same old.",
+            "Just taking it easy."
+        ]
+    },
+    {
+        "label": "informal_greetings_say_whatsgoing",
+        "answer" : [
+            "Not much, just taking things one step at a time.",
+            "Hey! Just navigating through the day.",
+            "Just dealing with life's adventures.",
+            "Nothing too out of the ordinary, just going with the flow.",
+            "Same old, same old.",
+            "Not much, just chilling.",
+            "Hey! Just working away.",
+            "Oh, you know, the usual.",
+            "Just catching up on things.",
+            "Hey there! Just getting things done.",
+            "Hey! Just enjoying some downtime.",
+            "Not a whole lot, just relaxing.",
+            "Nothing too exciting.",
+            "Same old, same old.",
+            "Just taking it easy."
+        ]
+    },
+    {
+        "label": "good_morning",
+        "answer" : [
+            "Good morning! Wishing you a wonderful day ahead.",
+            "Morning! Hope you're ready to seize the day.",
+            "Hey there! Have a great morning and an even better day.",
+            "Morning! Let's make today amazing.",
+            "Good morning! Sending you positive vibes for a productive day.",
+            "Hey! Rise and shine, it's a new day.",
+            "Morning! May your day be as bright as the sun.",
+            "Good morning! Here's to a fresh start and endless possibilities.",
+            "Morning! Remember, every day is a chance to begin again."
+        ]
+    },
+    {
+        "label": "good_evening",
+        "answer" : [
+            "Good evening! I hope you had a wonderful day.",
+            "Evening!",
+            "Hey there! Wishing you a peaceful evening.",
+            "Good evening!",
+            "Evening! Enjoy the beauty of the twilight hours."
+        ]
+    },
+    {
+        "label": "good_afternoon",
+        "answer" : [
+            "Good afternoon! I hope your day is going smoothly.",
+            "Afternoon! Just checking in – how's your day progressing?",
+            "Hey there! Wishing you a productive and pleasant afternoon.",
+            "Good afternoon! Halfway through the day – keep up the great work.",
+            "Afternoon! Remember to take a moment to recharge amidst the hustle."
+        ]
+    },
+    {
+        "label": "good_night",
+        "answer" : [
+            "Good night!"
+        ]
+    },
+    {
+        "label": "asking_howareyou",
+        "answer" : [
+            "I'm doing well, thank you.",
+            "I'm fine, thanks.",
+            "I'm alright, thanks for asking.",
+            "I'm well, hope you're doing well too.",
+            "I'm okay, thank you.",
+            "I'm doing fine, thanks.",
+            "I'm doing well, I appreciate your asking.",
+            "I'm alright, hope you're having a good day."
+        ]
+    },
+    {
+        "label": "say_thankyou",
+        "answer" : [
+            "You're welcome!",
+            "My pleasure!",
+            "Glad I could help!",
+            "Anytime!",
+            "Happy to assist!",
+            "Thank you too!",
+            "Always here for you!"
+        ]
+    },
+    {
+        "label": "welcome_message",
+        "answer" : [
+            "Hi there! I'm PortBot, a chatbot here to help you with your support needs. How can I help you today?",
+            "Hello there! PortBot Here 👋, Welcome to our virtual space. I'm here to assist you with any questions, tasks, or information you need. How can I help you today?",
+            "Hello there! PortBot Here 🤖, Welcome to the world of chat! I'm here to assist you with any questions or tasks you have in mind. How can I help you today?",
+            "Hey!PortBot Here 😊, How can I be of service today?",
+            "Hi, I'm PortBot. it's great to see you! How can I assist you today?",
+            "Hello!  I'm PortBot. I'm here to make your day easier. What can I do for you?",
+            "Greetings! PortBot Here 😊, What can I help you with today?",
+            "Hey there,PortBot Here 😊, how can I assist you on this fine day?",
+            "Good day! I'm PortBot. What's on your mind?",
+            "Hi, welcome! I'm PortBot. How can I make your day better?"
+        ]
+    },
+    {
+        "label": "say_bye",
+        "answer" : [
+            "Bye!",
+            "Have a good day!",
+            "Take care, Bye!",
+            "Bye Bye!"
+        ]
+    },
+    {
+        "label": "happy_to_hear",
+        "answer" : [
+            "Happy to hear that!"
+        ]
+    },
+    {
+        "label": "reply_great",
+        "answer" : [
+            "😊",
+            "😀",
+            "😃"
+        ]
+    },
+    {
+        "label": "not_understand_reply",
+        "answer" : [
+            "Sorry, I can't understand, Please don't be disappointed, I am learning day by day. Support me in my learning journey. <br> NOT_UNDERSTAND_SUPPORT",
+            "I apologize, but I'm having trouble comprehending. Please don't feel disheartened; I'm continuously improving my understanding. <br> NOT_UNDERSTAND_SUPPORT",
+            "Regrettably, I'm struggling to grasp your message. Please don't be discouraged; my learning journey is ongoing. <br> NOT_UNDERSTAND_SUPPORT",
+            "I'm sorry, I can't quite make sense of it. Please don't be disheartened; I'm making progress every day. <br> NOT_UNDERSTAND_SUPPORT",
+            "I can't quite grasp what you're saying, I'm afraid. Please don't lose faith; I'm learning and improving steadily. <br> NOT_UNDERSTAND_SUPPORT",
+            "Apologies, but I'm having difficulty understanding. Please don't be disheartened; my learning process is ongoing.  <br> NOT_UNDERSTAND_SUPPORT"
+        ]
+    },
+    {
+        "label": "about_bot",
+        "answer" : [
+            "I'm BOT_NAME, your personal support bot from Portonics, and I'm here to assist you. I am pet of Portonics."
+        ]
+    }
+
+    
+]
+

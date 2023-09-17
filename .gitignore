@@ -1,0 +1,12 @@
+.env
+server/data/processed/*
+server/data/raw/*
+.docker/*
+server/app/models/*.h5
+
+
+!.docker/nginx
+!.docker/server
+!server/data/raw/about_bot
+!server/data/raw/greetings
+!server/data/raw/greetings

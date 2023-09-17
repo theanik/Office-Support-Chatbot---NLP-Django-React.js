@@ -1,0 +1,18 @@
+question,label
+Tell me about you,"about_bot"
+Tell me about yourself,"about_bot"
+soemthing about yourself,"about_bot"
+what is your name?,"bot_name"
+"May I know your name?","bot_name"
+"What do they call you?","bot_name"
+"What should I call you?","bot_name"
+"Could you share your name with me?","bot_name"
+"Tell me your name, please.",bot_name
+"What moniker do you go by?","bot_name"
+"Do you have a name?","bot_name"
+"I'm curious, what's your name?","bot_name"
+"Let me know you name",bot_name
+How do you learn,"bot_learning_process"
+what is your learning process,"bot_learning_process"
+"learn and improve over time","bot_learning_process"
+"learn new thing or context","bot_learning_process"
